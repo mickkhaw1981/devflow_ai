@@ -1,7 +1,14 @@
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-4xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">DevFlow AI</h1>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="h1-bold text-primary-500 text-gradient animate-fade-in">
+          DevFlow AI
+        </h1>
+        <p className="text-muted-foreground mt-4 animate-fade-in animation-delay-200 text-center max-w-lg">
+          Your go-to platform for developer Q&A and knowledge sharing
+        </p>
+      </div>
+    </main>
   );
 }
