@@ -54,7 +54,7 @@ const config: Config = {
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
-        "space-grotesk": ["var(--font-space-grotesk)"],
+        roboto_mono: ["var(--font-roboto-mono)"],
       },
     },
   },

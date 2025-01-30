@@ -5,7 +5,7 @@ export default function Home() {
         <h1 className="h1-bold text-primary-500 text-gradient animate-fade-in">
           DevFlow AI
         </h1>
-        <p className="text-muted-foreground mt-4 animate-fade-in animation-delay-200 text-center max-w-lg">
+        <p className="text-muted-foreground mt-4 animate-fade-in animation-delay-200 text-center max-w-lg roboto_mono">
           Your go-to platform for developer Q&A and knowledge sharing
         </p>
       </div>
