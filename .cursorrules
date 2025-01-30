@@ -60,11 +60,7 @@ Key Features:
 - Default to Server Components
 - Use modern TypeScript syntax
 - Follow responsive design principles
-- Create modular, reusable components
 - Implement efficient data fetching
-- Use Next.js 15's metadata API
-- Use Next.js Image component
-- Ensure accessibility
 - Implement error handling
 - Use loading states
 - Follow routing conventions
@@ -75,7 +71,7 @@ Key Features:
 
 ## UI and Styling
 - Use ShadcN UI and Radix components
-- Document ShadcN installation commands
+- use `npx shadcn@latest add <component-name>` to add new shadcn components
 - Implement Tailwind CSS
 - Consider extension constraints
 - Follow Material Design guidelines
