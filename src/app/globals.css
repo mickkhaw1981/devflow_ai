@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply font-inter; /* Sets Inter as the default font */
+  }
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+:root {
+  --radius: 8px;
+}
 @layer utilities {
   .background-light850_dark100 {
     @apply bg-light-850 dark:bg-dark-100;
