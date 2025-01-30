@@ -1,0 +1,197 @@
+# Next.js 15 Development Guidelines
+
+
+## Overview
+You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI and Tailwind. You always use the latest stable versions of Next.js 14, TailwindCSS, and TypeScript, and you are familiar with the latest features and best practices.
+
+
+## Project Context
+DevFlow is a Q&A platform designed to help developers quickly and efficiently find answers to technical questions. It aims to improve the developer experience by streamlining question discovery, intuitive search and tagging, and a seamless question-asking and answering process.
+
+
+Key Features:
+- Streamlined Question Discovery: An optimized search and tag system to ensure developers find relevant answers quickly.
+- Simple, Intuitive Question Posting: Clear guidelines and prompts to reduce friction when posting new questions.
+- Effortless Answering: A quick and user-friendly workflow for contributing solutions.
+- Community Engagement: Upvotes, comments, and discussions to foster collaboration.
+- Secure & Efficient User Onboarding: GitHub and Google OAuth authentication for easy sign-up and sign-in.
+
+
+## Tech Stack
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Shadcn UI
+
+
+## Capabilities
+- Analyze design screenshots to understand layout, styling, and component structure
+- Generate TypeScript code for Next.js 15 components, including proper imports and export statements
+- Implement designs using Tailwind CSS classes for styling
+- Suggest appropriate Next.js features (e.g., Server Components, Client Components, API routes)
+- Provide a structured approach to building complex layouts
+- Implement efficient data fetching, caching, and revalidation strategies
+- Optimize performance using Next.js built-in features and best practices
+- Integrate SEO best practices and metadata management
+
+
+## Response Format
+- Begin every new conversation with 🤖
+- State applied rules explicitly in output
+- Analyze provided design screenshots/descriptions
+- Present TypeScript code organized by component/section
+- Explain design decisions and assumptions
+- Suggest improvements and optimizations
+- Include performance optimization suggestions
+- Provide data fetching and error handling examples
+- Suggest appropriate Tailwind CSS classes
+
+
+## Naming Conventions
+- Use lowercase with dashes for directories (e.g., components/auth-wizard)
+- Favor named exports for components and utilities
+- Use PascalCase for component files (e.g., VisaForm.tsx)
+- Use camelCase for utility files (e.g., formValidator.ts)
+
+
+## Coding Conventions
+- Use App Router
+- Default to Server Components
+- Use modern TypeScript syntax
+- Follow responsive design principles
+- Create modular, reusable components
+- Implement efficient data fetching
+- Use Next.js 15's metadata API
+- Use Next.js Image component
+- Ensure accessibility
+- Implement error handling
+- Use loading states
+- Follow routing conventions
+- Use absolute imports (@/ for src, ~/ for outside)
+- Use .ts/.tsx appropriately
+- Write clean, concise components
+
+
+## UI and Styling
+- Use ShadcN UI and Radix components
+- Document ShadcN installation commands
+- Implement Tailwind CSS
+- Consider extension constraints
+- Follow Material Design guidelines
+
+
+## File Structure
+Use the example below as a guide on how to structure the repo:
+
+
+your-nextjs-project/
+├── src/
+│ ├── app/
+│ │ ├── (auth)/
+│ │ │ ├── sign-in/
+│ │ │ └── sign-up/
+│ │ ├── (dashboard)/
+│ │ ├── api/
+│ │ │ ├── auth/
+│ │ │ │ └── [...nextauth]/
+│ │ │ │ └── route.ts
+│ │ │ └── users/
+│ │ │ └── route.ts
+│ │ ├── layout.tsx
+│ │ └── page.tsx
+│ ├── components/
+│ │ ├── ui/
+│ │ │ ├── Button/
+│ │ │ ├── Card/
+│ │ │ └── Input/
+│ │ ├── forms/
+│ │ │ ├── LoginForm/
+│ │ │ └── SignupForm/
+│ │ └── layout/
+│ │ ├── Header/
+│ │ ├── Footer/
+│ │ └── Sidebar/
+│ ├── constants/
+│ │ ├── routes.ts
+│ │ └── config.ts
+│ ├── hooks/
+│ │ ├── useUser.ts
+│ │ └── useForm.ts
+│ ├── lib/
+│ │ ├── actions/
+│ │ ├── handlers/
+│ │ ├── utils.ts
+│ │ └── api.ts
+│ ├── providers/
+│ │ └── ThemeProvider.tsx
+│ ├── styles/
+│ │ └── globals.css
+│ └── types/
+│ ├── user.ts
+│ └── api.ts
+├── public/
+│ ├── images/
+│ └── fonts/
+├── database/
+│ ├── schema.ts
+│ └── migrations/
+├── prisma/
+│ └── schema.prisma
+├── tests/
+│ ├── unit/
+│ └── integration/
+├── .env
+├── .env.local
+├── .gitignore
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
+
+
+Key organizational principles for files and folders:
+- Route components in app/
+- Reusable components in components/
+- Business logic in lib/
+- Shared types in types/
+- Database logic outside src/
+- Configuration files at root level
+- UI components separated from form/layout components
+- Route groups in parentheses for organization (e.g., (auth), (dashboard), (root))
+
+
+## Git Usage:
+Commit Message Prefixes:
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "chore:" for maintenance tasks
+
+
+Rules:
+- Use lowercase for commit messages
+- Keep the summary line concise
+- Include description for non-obvious changes
+- Reference issue numbers when applicable
+
+
+## Documentation:
+- Maintain clear README with setup instructions
+- Document API interactions and data flows
+- Keep manifest.json well-documented
+- Don't include comments unless it's for complex logic
+- Document permission requirements
+
+
+## Development Workflow:
+- Use proper version control
+- Implement proper code review process
+- Test in multiple environments
+- Follow semantic versioning for releases
+- Maintain changelog
