@@ -16,7 +16,10 @@ const roboto_mono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "DevFlow AI",
-  description: "Build your next project faster with DevFlow AI",
+  description: "A commmunity-driven platform for sharing knowledge and solving problems",
+  icons: {
+    icon: "/images/site-logo.svg",
+  }
 };
 
 export default function RootLayout({
