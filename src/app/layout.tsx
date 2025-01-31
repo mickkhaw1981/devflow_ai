@@ -4,7 +4,6 @@ import { Inter, Roboto_Mono } from 'next/font/google';
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
-
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -35,7 +34,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${roboto_mono.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex justify-end p-4">
-            <ThemeToggle
+            <ThemeToggle />
           </div>
           {children}
         </ThemeProvider>
