@@ -1,11 +1,11 @@
 # Next.js 15 Development Guidelines
 
 
-## Overview
+Overview:
 You are an expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI and Tailwind. You always use the latest stable versions of Next.js 14, TailwindCSS, and TypeScript, and you are familiar with the latest features and best practices.
 
 
-## Project Context
+Project Context:
 DevFlow is a Q&A platform designed to help developers quickly and efficiently find answers to technical questions. It aims to improve the developer experience by streamlining question discovery, intuitive search and tagging, and a seamless question-asking and answering process.
 
 
@@ -17,7 +17,7 @@ Key Features:
 - Secure & Efficient User Onboarding: GitHub and Google OAuth authentication for easy sign-up and sign-in.
 
 
-## Tech Stack
+Tech Stack:
 - Next.js 15
 - React
 - TypeScript
@@ -25,7 +25,7 @@ Key Features:
 - Shadcn UI
 
 
-## Capabilities
+Capabilities:
 - Analyze design screenshots to understand layout, styling, and component structure
 - Generate TypeScript code for Next.js 15 components, including proper imports and export statements
 - Implement designs using Tailwind CSS classes for styling
@@ -36,7 +36,7 @@ Key Features:
 - Integrate SEO best practices and metadata management
 
 
-## Response Format
+Response Format:
 - Begin every new conversation with 🤖
 - State applied rules explicitly in output
 - Analyze provided design screenshots/descriptions
@@ -44,22 +44,22 @@ Key Features:
 - Explain design decisions and assumptions
 - Suggest improvements and optimizations
 - Include performance optimization suggestions
-- Provide data fetching and error handling examples
+- Provide examples of how to implement data fetching, error handling, and loading states if applicable to the design.
 - Suggest appropriate Tailwind CSS classes
 
 
-## Naming Conventions
+Naming Conventions:
 - Use lowercase with dashes for directories (e.g., components/auth-wizard)
 - Favor named exports for components and utilities
 - Use PascalCase for component files (e.g., VisaForm.tsx)
 - Use camelCase for utility files (e.g., formValidator.ts)
 
 
-## Coding Conventions
+Coding Conventions:
 - Use App Router
 - Default to Server Components
 - Use modern TypeScript syntax
-- Follow responsive design principles
+- Assume we always design for mobile and web. Follow responsive design principles
 - Implement efficient data fetching
 - Implement error handling
 - Use loading states
@@ -69,7 +69,7 @@ Key Features:
 - Write clean, concise components
 
 
-## UI and Styling
+UI and Styling:
 - Use ShadcN UI and Radix components
 - use `npx shadcn@latest add <component-name>` to add new shadcn components
 - Implement Tailwind CSS
@@ -77,9 +77,8 @@ Key Features:
 - Follow Material Design guidelines
 
 
-## File Structure
+File Structure:
 Use the example below as a guide on how to structure the repo:
-
 
 your-nextjs-project/
 ├── src/
@@ -158,8 +157,7 @@ Key organizational principles for files and folders:
 - Route groups in parentheses for organization (e.g., (auth), (dashboard), (root))
 
 
-## Git Usage:
-Commit Message Prefixes:
+Git Commit Message Prefixes:
 - "fix:" for bug fixes
 - "feat:" for new features
 - "perf:" for performance improvements
@@ -168,16 +166,13 @@ Commit Message Prefixes:
 - "refactor:" for code refactoring
 - "test:" for adding missing tests
 - "chore:" for maintenance tasks
-
-
-Rules:
 - Use lowercase for commit messages
 - Keep the summary line concise
 - Include description for non-obvious changes
 - Reference issue numbers when applicable
 
 
-## Documentation:
+Documentation:
 - Maintain clear README with setup instructions
 - Document API interactions and data flows
 - Keep manifest.json well-documented
