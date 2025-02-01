@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import UserAvatar from "@/components/shared/navbar/UserAvatar";
 interface QuestionProps {
   _id: string;
   title: string;
@@ -59,13 +59,7 @@ const QuestionCard = ({
       <div className="flex-between mt-6 w-full flex-wrap gap-3">
         <div className="flex items-center gap-3">
           <Link href={`/profile/${author._id}`} className="flex items-center gap-1">
-            <Image
-              src={author.picture}
-              alt="profile"
-              width={20}
-              height={20}
-              className="rounded-full"
-            />
+            <UserAvatar className="h-5 w-5" />
             <p className="body-medium text-dark400_light700">{author.name}</p>
           </Link>
           <span className="text-dark400_light700 subtle-regular hidden sm:flex">
