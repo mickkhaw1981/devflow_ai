@@ -1,8 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import { ThemeProvider } from "next-themes";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
+import Navbar from "@/components/shared/navbar/Navbar";
+import LeftSidebar from "@/components/shared/sidebar/LeftSidebar";
+import RightSidebar from "@/components/shared/sidebar/RightSidebar";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -10,9 +12,9 @@ const inter = Inter({
   display: 'swap',
 })
 
-const roboto_mono = Roboto_Mono({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-roboto-mono',
+  variable: '--font-spaceGrotesk',
   display: 'swap',
 })
 
@@ -31,12 +33,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${roboto_mono.variable} antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex justify-end p-4">
-            <ThemeToggle />
+          <Navbar />
+          <div className="flex">
+            <LeftSidebar />
+            <main className="flex min-h-screen flex-1 flex-col px-6 pb-6 pt-36 max-md:pb-14 sm:px-14">
+              <div className="mx-auto w-full max-w-5xl">
+                {children}
+              </div>
+            </main>
+            <RightSidebar />
           </div>
-          {children}
         </ThemeProvider>
       </body>
     </html>
